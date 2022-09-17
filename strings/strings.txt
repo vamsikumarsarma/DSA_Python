@@ -1,0 +1,74 @@
+Strings are collection of sequence of characters
+
+They can be created with single qutoes double quotes and thriple quotes
+a ='helllo'
+b = "world"
+c = """Hello, 
+        world"""
+In general single quotes are used for regex matching
+Thriple quotes for spanning the multi line Strings
+
+# defining strings in Python
+# all of the following are equivalent
+my_string = 'Hello'
+print(my_string) Hello
+
+my_string = "Hello"
+print(my_string) Hello
+
+my_string = '''Hello'''
+print(my_string) Hello
+
+# triple quotes string can extend multiple lines
+my_string = """Hello, welcome to
+           the world of Python"""
+print(my_string) Hello, welcome to 
+                    the world of python
+
+
+String Accessing
+----------------
+s#Accessing string characters in Python
+str = 'programiz'
+print('str = ', str) str = programiz
+
+#first character
+print('str[0] = ', str[0]) str[0] = p
+
+#last character
+print('str[-1] = ', str[-1]) str[-1] = z
+
+#slicing 2nd to 5th character
+print('str[1:5] = ', str[1:5])  str[1:5] = rogr
+
+#slicing 6th to 2nd last character
+print('str[5:-2] = ', str[5:-2]) str[5:-2] = am
+
+
+String Error--> Strings are immutable, which means elements of a string cannot be changed but, the total string can be re-assigned.
+-----------
+>>> my_string = 'programiz'
+>>> my_string[5] = 'a'
+...
+TypeError: 'str' object does not support item assignment
+
+# Python String Operations
+str1 = 'Hello'
+str2 ='World!'
+
+str1 + str2 =  HelloWorld!
+str1 * 3 = HelloHelloHello
+
+# Iterating through a string
+count = 0
+for letter in 'Hello World':
+    if(letter == 'l'):
+        count += 1
+print(count,'letters found')
+
+3 letters found
+
+>>> 'a' in 'program'
+True
+>>> 'at' not in 'battle'
+False
